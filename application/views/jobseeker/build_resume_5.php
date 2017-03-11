@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<input type="text" class="form-control" placeholder="State" name="state" value="<?= $employement_history[0]['state'];?>">
 		</div>
 		<div class="form-group">
-			<textarea class="form-control" placeholder="Company Description" name="company_description"><?= $employement_history[0]['company_description'];?>"</textarea>
+			<textarea class="form-control" placeholder="Company Description" name="company_description"><?= $employement_history[0]['company_description'];?></textarea>
 		</div>
 	</form>
 		<div class="clearfix"></div>
