@@ -80,11 +80,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			// gives UPDATE `mytable` SET `field` = 'field+1' WHERE `id` = 2
 			$this->db->set('job_title', $this->input->post('job_title'));
 			$this->db->set('company',$this->input->post('company'));
-			$this->db->set('company',$this->input->post('start_year'));
-			$this->db->set('company',$this->input->post('end_year'));
-			$this->db->set('company',$this->input->post('city'));
-			$this->db->set('company',$this->input->post('state'));
-			$this->db->set('company',$this->input->post('company_description'));
+			$this->db->set('start_year',$this->input->post('start_year'));
+			$this->db->set('end_year',$this->input->post('end_year'));
+			$this->db->set('city',$this->input->post('city'));
+			$this->db->set('state',$this->input->post('state'));
+			$this->db->set('company_description',$this->input->post('company_description'));
 			$this->db->where('e_mail', $this->session->userdata('e_mail'));
 			$update = $this->db->update('employement_history'); 
 			$this->db->set('created_at', date('20y-m-d'));
