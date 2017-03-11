@@ -31,10 +31,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<h4>Resume Builder</h4>
 		<p>Employement History</p>
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Job Title" name="job_title" view="<?= $employement_history[0]['job_title'];?>">
+			<input type="text" class="form-control" placeholder="Job Title" name="job_title" value="<?= $employement_history[0]['job_title'];?>">
 		</div>
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Company" name="company" view="<?= $employement_history[0]['company'];?>">
+			<input type="text" class="form-control" placeholder="Company" name="company" value="<?= $employement_history[0]['company'];?>">
 		</div>
 		<div class="form-group col-lg-5 col-xs-12 no-padding">
 			<select class="form-control" name="start_year">
@@ -51,10 +51,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</select>
 		</div>
 		<div class="form-group col-lg-5 col-xs-12 no-padding">
-			<input type="text" class="form-control" placeholder="City" name="city"  view="<?= $employement_history[0]['city'];?>">
+			<input type="text" class="form-control" placeholder="City" name="city"  value="<?= $employement_history[0]['city'];?>">
 		</div>
 		<div class="form-group col-lg-5 col-xs-12 no-padding pull-right">
-			<input type="text" class="form-control" placeholder="State" name="state" view="<?= $employement_history[0]['state'];?>">
+			<input type="text" class="form-control" placeholder="State" name="state" value="<?= $employement_history[0]['state'];?>">
 		</div>
 		<div class="form-group">
 			<textarea class="form-control" placeholder="Company Description" name="company_description"><?= $employement_history[0]['company_description'];?>"</textarea>
