@@ -31,10 +31,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<h4>Resume Builder</h4>
 		<p>Employement History</p>
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Job Title" name="job_title">
+			<input type="text" class="form-control" placeholder="Job Title" name="job_title" view="<?= $employement_history[0]['job_title'];?>">
 		</div>
 		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Company" name="company">
+			<input type="text" class="form-control" placeholder="Company" name="company" view="<?= $employement_history[0]['company'];?>">
 		</div>
 		<div class="form-group col-lg-5 col-xs-12 no-padding">
 			<select class="form-control" name="start_year">
@@ -51,13 +51,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</select>
 		</div>
 		<div class="form-group col-lg-5 col-xs-12 no-padding">
-			<input type="text" class="form-control" placeholder="City" name="city">
+			<input type="text" class="form-control" placeholder="City" name="city"  view="<?= $employement_history[0]['city'];?>">
 		</div>
 		<div class="form-group col-lg-5 col-xs-12 no-padding pull-right">
-			<input type="text" class="form-control" placeholder="State" name="state">
+			<input type="text" class="form-control" placeholder="State" name="state" view="<?= $employement_history[0]['state'];?>">
 		</div>
 		<div class="form-group">
-			<textarea class="form-control" placeholder="Company Description" name="company_description"></textarea>
+			<textarea class="form-control" placeholder="Company Description" name="company_description"><?= $employement_history[0]['company_description'];?>"</textarea>
 		</div>
 	</form>
 		<div class="clearfix"></div>
@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			
 			<h6 class="custom-title">Employement History</h6>
 			<p class="text-center">
-			<?php if($employement_history[0]['job_title']!=''){ echo @$employement_history[0]['job_title'].'<br />'.$employement_history[0]['company'].'<br />Start Year: '.$employement_history[0]['start_year'].', End Year:'.$employement_history[0]['end_year'].'<br />'.$employement_history[0]['city'].', '.$employement_history[0]['state'].'<br />'.$employement_history[0]['company_description']; }?></p>
+			<?php if($employement_history[0]['job_title']!=''){ echo $employement_history[0]['job_title'].'<br />'.$employement_history[0]['company'].'<br />Start Year: '.$employement_history[0]['start_year'].', End Year:'.$employement_history[0]['end_year'].'<br />'.$employement_history[0]['city'].', '.$employement_history[0]['state'].'<br />'.$employement_history[0]['company_description']; }?></p>
 		</div>
 	</div>
 </div>
